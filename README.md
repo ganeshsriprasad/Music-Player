@@ -35,11 +35,20 @@ Database: SQLite to store user data, song metadata, favorites, and playlists.
 
 
 ### Website Preview
+
 #### Home Page
-<img src="static/Music-player-UI.png" width="900">
+<img src="static/music-player ui.png" width="900">
+
+
+
+#### Authorised user page
+<img src="static/music-ui.png" width="900">
+
+
 
 #### Detail Page
-<img src="static/music-ui.png" width="900">
+<img src="static/detail page.png" width="900">
+
 
 ----
 
