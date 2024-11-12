@@ -14,7 +14,7 @@
                   value="{{ request.GET.q }}" placeholder= "Search Songs "/>
                                 
                   <span class='input-group-btn mx-2'>
-                    <button type="submit" style="border-radius: 5px;background-color:#ff4f00;" class="btn btn-primary">Search</button>
+                    <button type="submit" style="border-radius: 5px;" class="btn btn-primary">Search</button>
                   </span>
               </div>
           </div>
@@ -48,7 +48,7 @@
           </div>
       </div>
       {% endfor %}
-      <a href="{% url 'recent' %}" class="btn btn-primary float-right" style="height: 135px;background-color:#ff4f00;"><center style="margin-top: 45px;">View all <i class="fa fa-arrow-right" aria-hidden="true"></i></center></a>
+      <a href="{% url 'recent' %}" class="btn btn-primary float-right" style="height: 135px;"><center style="margin-top: 45px;">View all <i class="fa fa-arrow-right" aria-hidden="true"></i></center></a>
 
 </div>
 
@@ -83,7 +83,7 @@
       {% endfor %}
       {% endif %}
       {% if not query_search %}
-      <a href="{% url 'all_songs' %}" class="btn btn-primary float-right" style="height: 135px;background-color:#ff4f00;"><center style="margin-top: 45px;">View all <i class="fa fa-arrow-right" aria-hidden="true"></i></center></a>
+      <a href="{% url 'all_songs' %}" class="btn btn-primary float-right" style="height: 135px;"><center style="margin-top: 45px;">View all <i class="fa fa-arrow-right" aria-hidden="true"></i></center></a>
       {% endif %}
     </div>
 <br>
@@ -113,7 +113,7 @@
       {% endfor %}
       {% endif %}
       {% if not query_search %}
-      <a href="{% url 'hindi_songs' %}" class="btn btn-primary float-right" style="height: 135px;background-color:#ff4f00;"><center style="margin-top: 45px;">View all <i class="fa fa-arrow-right" aria-hidden="true"></i></center></a>
+      <a href="{% url 'hindi_songs' %}" class="btn btn-primary float-right" style="height: 135px;"><center style="margin-top: 45px;">View all <i class="fa fa-arrow-right" aria-hidden="true"></i></center></a>
       {% endif %}
 </div>
 <br>
@@ -142,7 +142,7 @@
       {% endfor %}
       {% endif %}
       {% if not query_search %}
-      <a href="{% url 'english_songs' %}" class="btn btn-primary float-right" style="height: 135px;background-color:#ff4f00;"><center style="margin-top: 45px;">View all <i class="fa fa-arrow-right" aria-hidden="true"></i></center></a>
+      <a href="{% url 'english_songs' %}" class="btn btn-primary float-right" style="height: 135px;"><center style="margin-top: 45px;">View all <i class="fa fa-arrow-right" aria-hidden="true"></i></center></a>
       {% endif %}
     </div>
 </div>
@@ -153,8 +153,8 @@
 <br>
 
 <footer class="footer">
-    <!-- <div class="player" style="padding-left: 10px;padding-top:10px;background-color: #459dfb;"> -->
-      <div class="player" style="padding-left: 10px;padding-top:10px;background-color:#ff4f00;">
+    <div class="player" style="padding-left: 10px;padding-top:10px;background-color: #459dfb;">
+<!--       <div class="player" style="padding-left: 10px;padding-top:10px;background-color:#ff4f00;"> -->
       <div class="left"><img src="{{last_played.song_img.url}}" height="90" width="90" style="border-radius: 10px 10px 10px 10px;"></div>
       <div class="right">
          <div class="top">
