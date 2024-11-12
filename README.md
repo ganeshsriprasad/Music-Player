@@ -1,45 +1,16 @@
-# Django based music streaming website
-> https://galvanic-music.herokuapp.com/
 
-![GitHub stars](https://img.shields.io/github/stars/varadbhogayata/music-player) 
-![GitHub forks](https://img.shields.io/github/forks/varadbhogayata/music-player)
-[![Maintenance](https://img.shields.io/badge/maintained-yes-green.svg)](https://github.com/varadbhogayata/music-player/commits/master)
-[![Website shields.io](https://img.shields.io/badge/website-up-yellow)](https://galvanic-music.herokuapp.com/)
+
+# Music-Player  --  Django based music streaming website
+
+
+![GitHub stars](https://img.shields.io/github/stars/ganeshsriprasad/Music-Player) 
+![GitHub forks](https://img.shields.io/github/forks/ganeshsriprasad/Music-Player)
+[![Maintenance](https://img.shields.io/badge/maintained-yes-green.svg)](https://github.com/ganeshsriprasad/Music-Player/commits/main)
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
 
-### Website Preview
-#### Home Page
-<img src="website_images/Home.png" width="900">
-
-#### Detail Page
-<img src="website_images/Detail.png" width="900">
-
-----
+A Django-based Music Player with features for adding songs to favorites and creating custom playlists provides users with a personalized music experience through a web interface. The application enables users to manage, and listen to their music while organizing their collections into playlists and marking their favorite tracks.
 
 
-## Installation 📦
-
->pip install -r requirements.txt
-
-also add 'allauth.account.middleware.AccountMiddleware', to the setting.py middleware section
-#### Clone
-
-- Clone this repo to your local machine.
-
-## Dont forget migrations
-
-python manage.py makemigrations
-python manage.py migrate
-
-
-#### Run server locally
-
-```shell
-$ python manage.py runserver
-```
-> Go to localhost:8000
-
----
 
 ## Features 📋
 ⚡️ SignUp and SignIn option.\
@@ -53,6 +24,76 @@ $ python manage.py runserver
 ⚡️ Scroll through recently played/viewed songs.\
 ⚡️ Explore songs through your personalized playlist and favourites.
 
+## Tech Stack:
+
+Backend: Django (Python) for user management, music file handling, and database management.
+
+Frontend: HTML, CSS, JavaScript for the audio player and user interface.
+
+Database: SQLite to store user data, song metadata, favorites, and playlists.
+
+
+
+### Website Preview
+#### Home Page
+<img src="static/Music-player-UI.png" width="900">
+
+#### Detail Page
+<img src="static/music-ui.png" width="900">
+
+----
+
+
+## Installation 📦
+
+### Clone the Repository
+
+Clone this repository to your local machine using Git:
+
+```bash
+git clone https://github.com/ganeshsriprasad/Music-Player
+```
+
+# Create and Activate a Virtual Environment
+A virtual environment is recommended to isolate the project dependencies. Follow the steps below:
+
+## Navigate to the project directory:
+```shell
+cd Music-Player
+```
+
+## Create a virtual environment.
+```bash
+python -m venv myenv
+myenv\Scripts\activate
+```
+
+Once activated, your terminal prompt will change to show the virtual environment name.
+## Install Dependencies
+With the virtual environment activated, install the required dependencies using pip:
+```bash
+pip install -r requirements.txt
+```
+
+## Dont forget migrations
+
+```shell
+python manage.py makemigrations
+python manage.py migrate
+```
+
+## Run the Development Server
+To start the development server, use the following command:
+```bash
+python -m manage runserver
+```
+
+
+### You can now access the website at http://127.0.0.1:8000/ in your browser.
+
+
+
+This music player provides a basic, yet powerful, platform for managing and enjoying music collections online, with features that allow for personalized music experiences through favorites and custom playlists.
 
 ---
 
@@ -76,14 +117,6 @@ $ python manage.py runserver
 
 - 🔃 Create a new pull request.
 
-
-
-## Team ✨
-
-| <a href="https://rajaprerak.github.io" target="_blank">**Prerak Raja**</a> | <a href="https://varadbhogayata.github.io" target="_blank">**Varad Bhogayata**</a> | 
-| :---: |:---:|
-| [![Prerak Raja](https://github.com/rajaprerak.png?size=100)](https://rajaprerak.github.io)    | [![Varad Bhogayata](https://github.com/varadbhogayata.png?size=100)](https://varadbhogayata.github.io) ||
-| <a href="https://github.com/rajaprerak" target="_blank">`github.com/rajaprerak`</a> | <a href="https://github.com/varadbhogayata" target="_blank">`github.com/varadbhogayata`</a> 
 
 ## License 📄
 This project is licensed under the MIT License - see the [LICENSE.md](./LICENSE) file for details.
